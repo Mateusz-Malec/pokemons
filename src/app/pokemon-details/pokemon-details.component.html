@@ -1,4 +1,8 @@
+<div class="card" >
+<h2>{{pokemon.name}}</h2>
 ID: {{pokemon.id}}
-Name: {{pokemon.name}}
-Height: {{pokemon.height}}
-Weight: {{pokemon.weight}}
+<p>Height: {{pokemon.height}}</p>
+<p>Weight: {{pokemon.weight}}</p>
+<p>Abilities:<li *ngFor="let a of pokemon.abilities">{{a.ability.name}}</li></p>
+<p>Stats:<li *ngFor="let s of pokemon.stats">{{s.stat.name}} {{s.base_stat}}</li></p>
+</div>
